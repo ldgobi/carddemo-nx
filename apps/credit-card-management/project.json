@@ -1,0 +1,26 @@
+{
+  "name": "@carddemo-nx/credit-card-management",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/credit-card-management",
+  "projectType": "application",
+  "targets": {
+    "dev": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "@carddemo-nx/credit-card-management:build",
+        "dev": true,
+        "port": 4204
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "@carddemo-nx/credit-card-management:build:development"
+        },
+        "production": {
+          "buildTarget": "@carddemo-nx/credit-card-management:build:production",
+          "dev": false
+        }
+      }
+    }
+  }
+}

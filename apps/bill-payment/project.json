@@ -1,0 +1,26 @@
+{
+  "name": "@carddemo-nx/bill-payment",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/bill-payment",
+  "projectType": "application",
+  "targets": {
+    "dev": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "@carddemo-nx/bill-payment:build",
+        "dev": true,
+        "port": 4202
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "@carddemo-nx/bill-payment:build:development"
+        },
+        "production": {
+          "buildTarget": "@carddemo-nx/bill-payment:build:production",
+          "dev": false
+        }
+      }
+    }
+  }
+}

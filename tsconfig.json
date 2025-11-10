@@ -8,6 +8,42 @@
     },
     {
       "path": "./apps/user-management"
+    },
+    {
+      "path": "./apps/account-management-e2e"
+    },
+    {
+      "path": "./apps/account-management"
+    },
+    {
+      "path": "./apps/bill-payment-e2e"
+    },
+    {
+      "path": "./apps/bill-payment"
+    },
+    {
+      "path": "./apps/credit-card-management-e2e"
+    },
+    {
+      "path": "./apps/credit-card-management"
+    },
+    {
+      "path": "./apps/transaction-management-e2e"
+    },
+    {
+      "path": "./apps/transaction-management"
+    },
+    {
+      "path": "./libs/ui-components"
+    },
+    {
+      "path": "./libs/shared-types"
+    },
+    {
+      "path": "./libs/api-services"
+    },
+    {
+      "path": "./libs/utils"
     }
   ]
 }

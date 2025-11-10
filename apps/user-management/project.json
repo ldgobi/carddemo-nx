@@ -1,0 +1,26 @@
+{
+  "name": "@carddemo-nx/user-management",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/user-management",
+  "projectType": "application",
+  "targets": {
+    "dev": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "@carddemo-nx/user-management:build",
+        "dev": true,
+        "port": 4201
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "@carddemo-nx/user-management:build:development"
+        },
+        "production": {
+          "buildTarget": "@carddemo-nx/user-management:build:production",
+          "dev": false
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@carddemo-nx/account-management",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/account-management",
+  "projectType": "application",
+  "targets": {
+    "dev": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "@carddemo-nx/account-management:build",
+        "dev": true,
+        "port": 4205
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "@carddemo-nx/account-management:build:development"
+        },
+        "production": {
+          "buildTarget": "@carddemo-nx/account-management:build:production",
+          "dev": false
+        }
+      }
+    }
+  }
+}

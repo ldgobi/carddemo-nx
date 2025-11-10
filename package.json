@@ -5,7 +5,7 @@
   "scripts": {},
   "private": true,
   "dependencies": {
-    "next": "~15.2.4",
+    "next": "15.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -27,12 +27,14 @@
     "@swc/cli": "~0.6.0",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
+    "@swc/jest": "~0.2.38",
     "@testing-library/dom": "10.4.0",
     "@testing-library/react": "16.3.0",
     "@types/jest": "^30.0.0",
     "@types/node": "20.19.9",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.21",
     "babel-jest": "^30.0.2",
     "eslint": "^9.8.0",
     "eslint-config-next": "^15.2.4",
@@ -44,9 +46,12 @@
     "eslint-plugin-react-hooks": "5.0.0",
     "jest": "^30.0.2",
     "jest-environment-jsdom": "^30.0.2",
+    "jest-environment-node": "^30.0.2",
     "jest-util": "^30.0.2",
     "nx": "22.0.2",
+    "postcss": "^8.5.6",
     "prettier": "^2.6.2",
+    "tailwindcss": "^4.1.17",
     "ts-jest": "^29.4.0",
     "ts-node": "10.9.1",
     "tslib": "^2.3.0",
@@ -54,6 +59,7 @@
     "typescript-eslint": "^8.40.0"
   },
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "libs/*"
   ]
 }

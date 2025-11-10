@@ -1,0 +1,26 @@
+{
+  "name": "@carddemo-nx/gateway",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/gateway",
+  "projectType": "application",
+  "targets": {
+    "dev": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "@carddemo-nx/gateway:build",
+        "dev": true,
+        "port": 4200
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "@carddemo-nx/gateway:build:development"
+        },
+        "production": {
+          "buildTarget": "@carddemo-nx/gateway:build:production",
+          "dev": false
+        }
+      }
+    }
+  }
+}
